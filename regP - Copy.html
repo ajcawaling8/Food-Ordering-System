@@ -1,0 +1,95 @@
+<html>
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type ="text/css" href="css/regP.css">
+        
+        <script src="js/formValid.js"></script>  
+</head>
+
+        <header>
+                <img src="images/head.jpg" style="width:99.3%;margin: 7px; opacity: 0.8;">
+
+                <div class="menu1">
+                <a href="">HOME</a>
+                <a href="">PROMOS</a>
+                <a href="">ABOUT US</a>
+                <a href="">CONTACT US</a>
+                </div>
+
+        <form class="search">
+                        <input type="text" name="search" placeholder="Search..">
+        </form>
+
+
+                <div id ="mySidenav" class="sidenav">
+                    <a href="" id="tradi">Traditional</a>
+                    <a href="" id="indian">Indian</a>
+                    <a href="" id="italian">Italian</a>
+                    <a href="" id="thai">Thai</a>
+                </div>
+        </header>
+        
+<body><br><br><br><br>
+        
+        
+<form id="myForm" onsubmit="MyValidation()" target="_blank" method="post">
+<fieldset>
+        <legend>Personal Information:</legend><br>
+                <fieldset>  
+                <pre>
+                      
+                    *First name:           <input type="text" id="firstname" name="firstname" style="color:black" required maxlength="12" minlength="2"><br><br>
+                    *Last name:            <input type="text" id="lastname" name="lastname" style="color:black" required maxlength="12" minlength="5" ><br><br>
+                    *Password:             <input type="password" id="password" name="password" style="color:black"  required ><br><br>
+                    *Confirm password:     <input type="password" id="conpassword" name="conpassword" style="color:black"  required><br><br>
+                    *Email:                <input type="email" id="email" name="email" style="color:black" required><br><br>
+                    *Contact number:       <input type="number" id="contact" name="contactnumber" style="color:black" required><br><br>
+                     Fax:                  <input type="text" id="fax" name="fax" style="color:black" ><br><br>
+                    *Address 1:            <input type="text" id="address1" name="address1" style="color:black" required><br><br>
+                    *Address 2:            <input type="text" id="address2" name="address2" style="color:black"  required><br><br>
+                    *City:                 <input type="text" id="city" name="city" style="color:black"  required><br><br>
+                    *Post code:            <input type="text" id="code" name="postcode" style="color:black" required><br><br>
+                </pre>    
+                <br>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <pre class="payM">
+                     Pay with:             <input type="radio" name="card" value="Master card" checked>Master card <br>
+                                           <input type="radio" name="card" value="Visa card" checked>Visa card                       
+                    </pre>
+                    <pre>
+                     Name:                  <input id="name1" type="text" name="firstname" style="color:black"><br><br>
+                     Card number:           <input id="cardNo"type="number" name="cardnumber" style="color:black"><br><br>
+                     Expiry date:           <input type="date" name="expirydate" style="color:black"><br><br>
+                     Card verification Code:<input id="cardVeri" type="text" name="code" style="color:black"><br><br>
+                     </pre>
+                </fieldset>
+                <br><br>
+                
+		<input id="sub" type="submit" value="submit" float="right">
+ </fieldset>
+</form>
+
+</body>
+
+
+        <footer>
+                <div class="foot">
+                    <a href="">HOME</a>
+                    <a href="">ABOUT US</a>
+                    <a href="">FEEDBACK</a>
+                    <a href="">CONTACT US</a>
+                    <h3>Copyright Company 2013;All Right Reserved.</h3>
+                <div>
+                
+                <div class="footlogo"> 
+                    <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt=""/></a>
+                    <a href="https://about.twitter.com/en_us.html"> <img src="images/twitter.png"  alt=""/></a>
+                    <a href="https://www.instagram.com/?hl=en"> <img src="images/Instagram.png" alt=""/></a>
+                    <a href="https://www.google.com/"> <img src="images/google.png" alt=""/></a> 
+                </div>
+        </footer>
+
+</html>

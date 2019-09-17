@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type = "text/css" href="css/adminUserManagement.css">
+    
+</head>
+<header>
+        <img src="images/head.jpg" style="width:99.5%;margin: 7px;opacity: 0.8;">
+
+        <div class="menu1">
+                <a href="">HOME</a>
+                <a href="">PROMOS</a>
+                <a href="">FEEDBACK</a>
+                <a href="contact.html">ABOUT US</a>
+                <a href="feedback.html">CONTACT US</a>
+        </div>
+
+        <form class="search">
+                <input type="text" name="search" placeholder="Search..">
+        </form>
+
+
+        <div id ="mySidenav" class="sidenav">
+                <a href="" id="tradi">Traditional</a>
+                <a href="" id="indian">Indian</a>
+                <a href="" id="italian">Italian</a>
+                <a href="" id="thai">Thai</a>
+        </div>
+
+<button id="btn"  onclick="document.getElementById('mymdl').style.display='block'" style="width:auto;">Login</button>
+
+<div id="mymdl" class="modal">
+<div class="modal-content">
+                    
+                    <span class="close">&times;</span>
+                
+<form id="form1">
+<fieldset>
+<legend><b>Login</b></legend>
+<img src="images/logoin.png" alt="loginlogo" class="persona" align="left">
+<pre>
+    <b>Username:</b> <input type="text" spaceholder=" Enter username" required ">
+    <b>Password:</b> <input type="text" spaceholder="Enter password" required " >
+              <button type="submit" align="right">Login</button>
+                    <input style="background: white;width: 15;height: 15px;" type="checkbox" checked="checked" name="remember">   Remember me
+</pre>    
+                <span class="psw">Forgot <a class="link" href="#">password?</a></span>
+                <span class="signup">Do not have an account?<a class="link" href="#">signup here</a></span>
+</fieldset>         
+</form>
+</div>
+</div>
+
+
+
+
+</header>
+<body class="body">
+<br><br><br><br><br>
+<center>
+    <table id="myTable" >
+  <tr>
+    <th>Account No.</th>
+    <th>Username</th>
+    <th>Password</th>
+    <th>User Access</th>
+    <th></th>
+  </tr>
+
+  
+</table>
+<br>
+
+<button onclick="myCreateFunction()">Add Account</button>
+</center>
+
+<script>
+function myCreateFunction() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow();
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    var cell5 = row.insertCell(4);
+    cell1.innerHTML = '<input type="text" id="fname">';
+    cell2.innerHTML = '<input type="text" id="fname">';
+    cell3.innerHTML = '<input type="text" id="fname">';
+    cell4.innerHTML = '<input type="text" id="fname">';
+    cell5.innerHTML = '<input type="button" value="Delete Account" onclick="deleteRow(this)">';
+}
+
+    function deleteRow(r) {
+    var i = r.parentNode.parentNode.rowIndex;
+    document.getElementById("myTable").deleteRow(i);
+}
+
+
+</script>
+
+
+         <script src="js/login.js" type="text/javascript"></script>
+        
+        <script src="js/cart.js" type="text/javascript"></script>
+    
+</body>
+<footer>
+                <div class="foot">                              
+                    <a href="">HOME</a>
+                    <a href="">ABOUT US</a>
+                    <a href="">FEEDBACK</a>
+                    <a href="">CONTACT US</a>
+                    <h3>Copyright Company 2013;All Right Reserved.</h3>
+                <div>
+                
+                <div class="footlogo"> 
+                    <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt=""/></a>
+                    <a href="https://about.twitter.com/en_us.html"> <img src="images/twitter.png"  alt=""/></a>
+                    <a href="https://www.instagram.com/?hl=en"> <img src="images/Instagram.png" alt=""/></a>
+                    <a href="https://www.google.com/"> <img src="images/google.png" alt=""/></a> 
+                    
+                </div>
+        </footer>
+
+</html>

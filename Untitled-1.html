@@ -1,0 +1,164 @@
+<html>
+<head>
+    <style>
+        table,td,th,tr{background: blanchedalmond; width:35%;}
+    </style>
+    
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+    
+             google.charts.load('current', {'packages':['corechart']});
+             google.charts.setOnLoadCallback(drawChart);
+    
+    
+            function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                       ['Task', 'Hours per Day'],
+                       ['Work', 8],
+                       ['Eat', 2],
+                       ['TV', 4],
+                       ['Gym', 2],
+                       ['Sleep', 8]
+                       ]);
+    
+            var options = {'title':'My Average Day'};
+    
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      
+            chart.draw(data,{
+                        width: 700,
+                        height: 540,
+                        title: 'Toppings I Like On My Pizza',
+                        colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+                        is3D: true
+                        });
+                                 }
+            </script>
+
+<!-- 2nd line chart  -->
+
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+  
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                 var data = new google.visualization.DataTable();
+                    data.addColumn('number', 'x');
+                    data.addColumn('number', 'values');
+                    data.addColumn({id:'i0', type:'number', role:'interval'});
+                    data.addColumn({id:'i1', type:'number', role:'interval'});
+                    data.addColumn({id:'i2', type:'number', role:'interval'});
+                    data.addColumn({id:'i2', type:'number', role:'interval'});
+                    data.addColumn({id:'i2', type:'number', role:'interval'});
+                    data.addColumn({id:'i2', type:'number', role:'interval'});
+
+            data.addRows([
+                    [1, 100, 90, 110, 85, 96, 104, 120],
+                    [2, 120, 95, 130, 90, 113, 124, 140],
+                    [3, 130, 105, 140, 100, 117, 133, 139],
+                    [4, 90, 85, 95, 85, 88, 92, 95],
+                    [5, 70, 74, 63, 67, 69, 70, 72],
+                    [6, 30, 39, 22, 21, 28, 34, 40],
+                    [7, 80, 77, 83, 70, 77, 85, 90],
+                    [8, 100, 90, 110, 85, 95, 102, 110]]);
+
+    // The intervals data as narrow lines (useful for showing raw source data)
+            var options_lines = {
+                title: 'Line intervals, default',
+                curveType: 'function',
+                lineWidth: 4,
+                intervals: { 'style':'line' },
+                legend: 'none',
+                width:700,
+                height:550
+                };
+
+            var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
+            chart_lines.draw(data, options_lines);
+                                }
+            </script>
+
+
+<!-- 3nd line chart  -->
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+            
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawVisualization);
+        
+            function drawVisualization() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+                    ['2004/05',  165,      938,         522,             998,           450,      614.6],
+                    ['2005/06',  135,      1120,        599,             1268,          288,      682],
+                    ['2006/07',  157,      1167,        587,             807,           397,      623],
+                    ['2007/08',  139,      1110,        615,             968,           215,      609.4],
+                    ['2008/09',  136,      691,         629,             1026,          366,      569.6]
+                    ]);
+        
+                var options = {
+                    title : 'Monthly Coffee Production by Country',
+                    vAxis: {title: 'Cups'},
+                    hAxis: {title: 'Month'},
+                    seriesType: 'bars',
+                    series: {5: {type: 'line'}}
+                    };
+        
+                var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+                                        }
+            </script>
+</head>
+
+<body>
+<div>
+    <h2>Daily Sales</h2>
+<table>
+<tr>
+    <th>Item no</th>
+    <th>Quantity</th>
+    <th>Sales</th>
+</tr>
+
+<tr>
+    <td>    </td>
+    <td>    </td>
+    <td>    </td>
+</tr>
+</table>
+</div>
+
+<div> 
+        <h2>Daily Sales</h2>
+    <table>
+    <tr>
+        <th>Item no</th>
+        <th>Quantity</th>
+        <th>Sales</th>
+    </tr>
+    
+    <tr>
+        <td>    </td>
+        <td>    </td>
+        <td>    </td>
+    </tr>
+    </table>
+    </div>
+    
+        <div>
+            <h2>My Web Page</h2>
+            <div id="piechart"></div>
+        </div>
+
+        <div>
+            <div id="chart_lines" style="width: 900px; height: 500px;"></div>
+        </div>
+    
+        <div>
+            <div id="chart_div" style="width: 900px; height: 500px;"></div>
+        </div>
+
+</body>
+</html>

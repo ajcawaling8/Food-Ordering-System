@@ -1,0 +1,95 @@
+<html>
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type ="text/css" href="css/feedBack.css">  
+        
+        <script src="js/feedback.js"></script>
+</head>
+
+<header>
+        <img src="images/head.jpg" style="width:99.5%;margin: 7px;opacity: 0.8;">
+
+        <div class="menu1">
+                <a href="slideShowP.html">HOME</a>
+                <a href="">PROMOS</a>
+                <a href="contact.html">ABOUT US</a>
+                <a href="feedback.html">CONTACT US</a>
+        </div>
+
+        <form class="search">
+                <input type="text" name="search" placeholder="Search..">
+        </form>
+
+
+        <div id ="mySidenav" class="sidenav">
+                <a href="tradit.html" id="tradi">Traditional</a>
+                <a href="thai.html" id="indian">Indian</a>
+                <a href="Itlian.html" id="italian">Italian</a>
+                <a href="thai.html" id="thai">Thai</a
+        </div>
+</header>
+<br><br><br><br>
+
+<body>
+<form id="feed" target="_blank" method="post">
+<fieldset>
+      <legend>About Us</legend><br>
+<fieldset>      
+<pre>
+        <select id="op">
+        <option value="feedbacktype">Feedback type</option>
+        <option value="inquirytype">Inquiry type</option>
+        <option value="orderinquiry">Order inquiry</option>
+        <option value="complaint">Complaint</option>
+        <option value="appreciation">Appreciation</option>
+        <option value="suggestion">Suggestion</option>
+        </select>
+</pre>
+<br><br>
+
+<pre>
+<b>
+   
+         *First Name:           <select id="op1">
+                                <option value="mr">Mr.</option>
+                                <option value="mrs">Mrs.</option>
+                                <option value="miss">Miss.</option>
+                                <option value="dr">Dr.</option>
+                                <option value="rev">Rev.</option>
+                                </select>  <input id="firstname1" type="text" name="firstname" style="color:black" required="required" maxlength="8"><br><br>
+         *Last Name:            <input class="box" id="lastname1" type="text" name="lastname" style="color:black" required="required" maxlength="12"><br><br>
+         *Email:                <input class="box" id="email1" type="text" name="email" style="color:black" required="required"><br><br>
+         *Contact Number:       <input class="box" id="contactnumber1" type="number" name="contactnumber" style="color:black" required="required"><br><br>
+         *Message:<br>              
+         <textarea rows="3" cols="50" id="message" name="message" required="required" style="color:black;background:rgb(184, 184, 184); border-style:none; "></textarea>
+</b>
+</pre>
+
+        <button id="sub1" onclick="feedValidation();">Submit</button>
+</form>
+</fieldset>
+</fieldset>
+<br><br>
+
+
+
+        <footer>
+                <div class="foot">
+                    <a href="">HOME</a>
+                    <a href="">ABOUT US</a>
+                    <a href="">FEEDBACK</a>
+                    <a href="">CONTACT US</a>
+                    <h3>Copyright Company 2013;All Right Reserved.</h3>
+                <div>
+                
+                <div class="footlogo"> 
+                    <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt=""/></a>
+                    <a href="https://about.twitter.com/en_us.html"> <img src="images/twitter.png"  alt=""/></a>
+                    <a href="https://www.instagram.com/?hl=en"> <img src="images/Instagram.png" alt=""/></a>
+                    <a href="https://www.google.com/"> <img src="images/google.png" alt=""/></a> 
+                    
+                </div>
+        </footer>
+
+</html>
